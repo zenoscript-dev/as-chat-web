@@ -1,0 +1,30 @@
+
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: lightgray;
+    color: black;
+    gap: 2rem;
+    width: 400px;
+    max-width: 90%;
+    padding: 2rem;
+  }
+  
+  .login-form >input{
+    padding: .5rem 1rem;
+    font-style: 1rem;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .login-form > button{
+    padding: .5rem 1rem;
+    background-color: antiquewhite;
+    color: black;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+  }

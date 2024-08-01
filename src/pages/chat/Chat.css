@@ -1,0 +1,146 @@
+:root {
+    --bg-color-light: #f9f9f9;
+    --bg-color-dark: #121212;
+    --message-bg-light-user: #dcf8c6;
+    --message-bg-dark-user: #1e1e1e;
+    --message-bg-light-bot: #ffffff;
+    --message-bg-dark-bot: #333333;
+    --text-color-light: #000;
+    --text-color-dark: #fff;
+  }
+  
+  .chat-app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: var(--bg-color-light);
+    color: var(--text-color-light);
+  }
+  
+  .dark-mode .chat-app {
+    background-color: var(--bg-color-dark);
+    color: var(--text-color-dark);
+  }
+  
+  .message-list {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .message {
+    margin: 5px 0;
+    padding: 22px;
+    border-radius: 5px;
+    max-width: 60%;
+    min-width: 100px;
+    position: relative;
+    word-wrap: break-word;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    border: 1px solid darkgray;
+  }
+  
+  .message.user {
+    background-color: var(--message-bg-light-user);
+    align-self: flex-end;
+    margin-left: auto;
+  }
+  
+  .dark-mode .message.user {
+    background-color: var(--message-bg-dark-user);
+  }
+  
+  .message.bot {
+    background-color: var(--message-bg-light-bot);
+    align-self: flex-start;
+    margin-right: auto;
+  }
+  
+  .dark-mode .message.bot {
+    background-color: var(--message-bg-dark-bot);
+  }
+  
+  .message-text {
+    font-size: 16px;
+  }
+  
+  .message-timestamp {
+    font-size: 10px;
+    color: gray;
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+  }
+  
+  .message-form {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    background-color: #fff;
+  }
+  
+  .dark-mode .message-form {
+    background-color: #1e1e1e;
+  }
+  
+  .message-form input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  .dark-mode .message-form input {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #555;
+  }
+  
+  .message-form button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .dark-mode .message-form button {
+    background-color: #0056b3;
+  }
+  
+  .message-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .dark-mode .message-form button:hover {
+    background-color: #004494;
+  }
+  
+  .theme-toggle {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 24px;
+  }
+  
+  .theme-toggle:hover {
+    background-color: #0056b3;
+  }
+  
